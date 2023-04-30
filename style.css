@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*___Attending to the social icons______*/
+.soc-link{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50);
+    display: flex;
+    flex-direction: column;
+}
+
+.soc-link i{
+    font-size: 25px;
+    cursor: pointer;
+   color: #242424;
+   margin-bottom: 20px;
+   transition: 0.4s;
+}
+.soc-link i:hover{
+    color: lightgrey;
+}
+
+/*_____This handles the first part of the split background */
+.container::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: darkgray;
+}
+/*___This handles the aspect of adding shadows and blur to the backgound__*/
+.container .card{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 255,0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid darkgrey;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px;
+}
+/* ____This section defines text on the navigation area___*/
+.card nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+
+/*____ This codes defines the logo design ___*/
+.card nav .logo{
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+}
+/*____Targeting the elements making up the various sections effecting change */
+.card nav .nav-links a{
+    color: #242424;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 40px;
+    transition: 0.3;
+}
+/*__inputing the pseudo_element(:Hover)___*/
+
+.card nav .nav-links a:hover,
+.card nav .nav-links a.active:hover{
+    color: darkgray;
+}
+.card .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+.card .content h1{
+    color: antiquewhite;
+}
+.card .content h4{
+    color: #242424;
+    margin-bottom: 10px;
+}
+.card .content p{
+    margin-bottom: 50px;
+    font-size: 18px;
+    width: 50%;
+    font-size: 15px;
+}
+
+.container img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid;
+}
+.card .content .btn{
+padding: 15px 20px;
+background-color: #242424;
+border: 2px solid #242424;
+color: #f9f9f9;
+border-radius: 5px;
+font-weight: bold;
+margin: 10px;
+}
+.card .content .btn:hover{
+  color: #242424;
+  transition: 0.3s;
+  background-color: transparent;
+}
+/* about section*/
+
+.about .content h2{
+    color: #242424;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.about .content p{
+    color: black;
+    line-height: 1.8;
+    margin-bottom: 80px;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.about .content .btn{
+    
+    color: #242424;
+    background-color: #242424;
+    border: 2px solid #242424;
+    color: #f9f9f9;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.about .content .btn:hover{
+    color: gray;
+    transition: 0.3s;
+}
+.portfolio .boxs .box img{
+    border-radius: 0;
+    border: 0;
+    float: left;
+    justify-content: space-around;
+}
+ h6{
+    
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+       color: #242424;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+/* contact session*/
+}
+ .contact-box{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.contact-box input{
+    align-items: center;
+    width: 48%;
+    font-size: 18px;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #242424;
+}
+.contact-box textarea{
+    border: 1px;
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #242424;
+    color: lightgray;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
